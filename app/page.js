@@ -82,7 +82,7 @@ export default function Home() {
       {/* HERO */}
 <section className="w-full overflow-hidden">
   <img
-    src="/hero.png"
+    src="/imagenes/hero.png"
   alt="Hero Impresamente"
   className="w-full h-[35vh] md:h-[48vh] object-cover object-center"
   />
