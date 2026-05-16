@@ -80,13 +80,13 @@ export default function Home() {
       </header>
 
       {/* HERO */}
-      <section className="w-full overflow-hidden">
-        <img
-          src="/imagenes/hero.png"
-          alt="Hero Impresamente"
-          className="w-full h-[60vh] md:h-[75vh] object-cover"
-        />
-      </section>
+<section className="w-full overflow-hidden">
+  <img
+    src="/imagenes/hero.png"
+    alt="Hero Impresamente"
+    className="w-full h-[60vh] md:h-[75vh] object-cover"
+  />
+</section>
 
       {/* BOTONES */}
       <section className="bg-white py-8 px-6">
