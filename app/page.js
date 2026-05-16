@@ -84,7 +84,7 @@ export default function Home() {
   <img
     src="/imagenes/hero.png"
     alt="Hero Impresamente"
-    className="w-full h-[60vh] md:h-[75vh] object-cover"
+    className=className="w-full h-[35vh] md:h-[48vh] object-cover object-center"
   />
 </section>
 
