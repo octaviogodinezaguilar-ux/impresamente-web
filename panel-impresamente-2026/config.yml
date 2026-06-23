@@ -1,0 +1,120 @@
+backend:
+  name: github
+  repo: octaviogodinezaguilar-ux/impresamente-web
+  branch: main
+  use_graphql: true
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "es"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  - name: "configuracion"
+    label: "Página Impresamente"
+    files:
+      - name: "inicio"
+        label: "Contenido de la página"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - label: "Marca"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Nombre", name: "name", widget: "string"}
+              - {label: "Subtítulo", name: "subtitle", widget: "string"}
+              - {label: "Ubicación", name: "location", widget: "string"}
+              - {label: "Envíos", name: "shipping", widget: "string"}
+              - {label: "Teléfono visible", name: "phone", widget: "string"}
+              - {label: "WhatsApp con lada", name: "whatsapp", widget: "string"}
+              - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+              - {label: "Instagram texto", name: "instagramLabel", widget: "string", required: false}
+              - {label: "Facebook URL", name: "facebook", widget: "string", required: false}
+              - {label: "Facebook texto", name: "facebookLabel", widget: "string", required: false}
+          - label: "Hero principal"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Frase superior", name: "eyebrow", widget: "string"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Palabra destacada", name: "highlight", widget: "string", required: false}
+              - {label: "Texto principal", name: "lead", widget: "string"}
+              - {label: "Texto secundario", name: "sublead", widget: "string"}
+              - {label: "Botón 1", name: "primaryCta", widget: "string"}
+              - {label: "Botón 2", name: "secondaryCta", widget: "string"}
+              - {label: "Imagen hero", name: "image", widget: "image"}
+              - {label: "Texto alternativo imagen", name: "imageAlt", widget: "string"}
+          - label: "Barra de confianza"
+            name: "trust"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Icono", name: "icon", widget: "string"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "string"}
+          - label: "Productos destacados"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Nombre", name: "name", widget: "string"}
+              - {label: "Categoría", name: "category", widget: "select", options: ["Agendas", "Termos", "Tazas", "Playeras", "Kits / Regalos"]}
+              - {label: "Precio", name: "price", widget: "string"}
+              - {label: "Imagen", name: "image", widget: "image"}
+              - {label: "Texto alternativo", name: "alt", widget: "string"}
+          - label: "Categorías"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Nombre", name: "name", widget: "string"}
+              - {label: "Imagen", name: "image", widget: "image"}
+              - {label: "Texto alternativo", name: "alt", widget: "string"}
+          - label: "Proceso"
+            name: "process"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Número", name: "number", widget: "string"}
+              - {label: "Icono", name: "icon", widget: "string"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "string"}
+          - label: "Colección"
+            name: "collection"
+            widget: "object"
+            fields:
+              - {label: "Etiqueta", name: "label", widget: "string"}
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "string"}
+              - {label: "Botón", name: "button", widget: "string"}
+              - {label: "Imagen", name: "image", widget: "image"}
+              - {label: "Texto alternativo", name: "alt", widget: "string"}
+          - label: "Testimonios"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - {label: "Iniciales", name: "initials", widget: "string"}
+              - {label: "Nombre", name: "name", widget: "string"}
+              - {label: "Estrellas", name: "stars", widget: "string", default: "★★★★★"}
+              - {label: "Comentario", name: "text", widget: "text"}
+          - label: "CTA final"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Texto", name: "text", widget: "string"}
+              - {label: "Botón", name: "button", widget: "string"}
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Título SEO", name: "title", widget: "string"}
+              - {label: "Descripción SEO", name: "description", widget: "text"}

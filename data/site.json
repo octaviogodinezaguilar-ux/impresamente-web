@@ -1,0 +1,71 @@
+{
+  "brand": {
+    "name": "Impresamente",
+    "subtitle": "Impresa Mente Design Studio",
+    "location": "Acapulco, Guerrero",
+    "shipping": "Envíos a toda la República",
+    "phone": "744 508 2879",
+    "whatsapp": "527445082879",
+    "instagram": "https://instagram.com/creativosimpresamente",
+    "instagramLabel": "@creativosimpresamente",
+    "facebook": "https://www.facebook.com/CreativosImpresamente",
+    "facebookLabel": "Creativos Impresamente"
+  },
+  "hero": {
+    "eyebrow": "Hecho para ti, hecho para durar.",
+    "title": "Diseñamos regalos que se sienten tuyos. ♡",
+    "highlight": "tuyos.",
+    "lead": "Donde tus ideas cobran vida con diseño e IA ✨",
+    "sublead": "Regalos únicos para momentos especiales.",
+    "primaryCta": "Ver catálogo",
+    "secondaryCta": "Pedir por WhatsApp",
+    "image": "assets/hero-products.png",
+    "imageAlt": "Agenda, termo y taza personalizados estilo chibi"
+  },
+  "trust": [
+    {"icon":"♡", "title":"Hecho con amor", "text":"en cada detalle"},
+    {"icon":"▣", "title":"Envíos a toda", "text":"la República"},
+    {"icon":"⌾", "title":"Pago seguro", "text":"100% confiable"},
+    {"icon":"☏", "title":"Atención por WhatsApp", "text":"744 508 2879"}
+  ],
+  "products": [
+    {"name":"Agenda chibi personalizada", "category":"Agendas", "price":"desde $399", "image":"assets/prod-agenda.png", "alt":"Agenda chibi personalizada"},
+    {"name":"Termo skinny personalizado", "category":"Termos", "price":"desde $349", "image":"assets/prod-termo.png", "alt":"Termo skinny personalizado"},
+    {"name":"Taza personalizada", "category":"Tazas", "price":"desde $249", "image":"assets/prod-taza.png", "alt":"Taza personalizada"}
+  ],
+  "categories": [
+    {"name":"Agendas", "image":"assets/cat-agendas.png", "alt":"Agendas personalizadas"},
+    {"name":"Termos", "image":"assets/cat-termos.png", "alt":"Termos personalizados"},
+    {"name":"Tazas", "image":"assets/cat-tazas.png", "alt":"Tazas personalizadas"},
+    {"name":"Playeras", "image":"assets/cat-playeras.png", "alt":"Playeras personalizadas"},
+    {"name":"Kits / Regalos", "image":"assets/cat-kits.png", "alt":"Kits de regalo"}
+  ],
+  "process": [
+    {"number":"1", "icon":"▢", "title":"Elige", "text":"Elige el producto que más te guste."},
+    {"number":"2", "icon":"✎", "title":"Personaliza", "text":"Comparte tu idea, fotos o texto."},
+    {"number":"3", "icon":"✓", "title":"Aprobamos", "text":"Te enviamos el diseño para tu visto bueno."},
+    {"number":"4", "icon":"🎁", "title":"Entregamos", "text":"Lo producimos y lo enviamos a tu puerta."}
+  ],
+  "collection": {
+    "label":"Colección especial",
+    "title":"Colección Chibi ♡",
+    "text":"Diseños únicos con tu esencia. Hechos para regalar felicidad.",
+    "button":"Descubrir colección",
+    "image":"assets/collection.png",
+    "alt":"Colección especial chibi Impresamente"
+  },
+  "testimonials": [
+    {"initials":"MF", "name":"María Fernanda", "stars":"★★★★★", "text":"Quedé encantada con mi agenda, el diseño es hermoso y la calidad increíble. ¡100% recomendable!"},
+    {"initials":"AL", "name":"Andrea López", "stars":"★★★★★", "text":"El termo quedó justo como lo imaginé, mi personaje chibi está divino. ¡Lo uso todos los días!"},
+    {"initials":"CR", "name":"Carlos Ramírez", "stars":"★★★★★", "text":"Excelente atención y entrega rápida. El regalo fue un éxito total. Volveré a pedir sin duda."}
+  ],
+  "cta": {
+    "title":"¿Lista para crear algo único?",
+    "text":"Escríbenos por WhatsApp y hagamos magia juntas.",
+    "button":"744 508 2879"
+  },
+  "seo": {
+    "title":"Impresamente | Productos personalizados",
+    "description":"Productos personalizados premium en Acapulco: agendas, termos skinny, tazas, playeras y regalos chibi con diseño único."
+  }
+}

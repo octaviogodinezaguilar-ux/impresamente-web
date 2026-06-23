@@ -1,0 +1,64 @@
+IMPRESAMENTE — GUÍA DE ACTUALIZACIÓN
+
+1. EDICIÓN RÁPIDA SIN PANEL
+
+Abre data/site.json con un editor de texto.
+Desde ahí puedes cambiar marca, contacto, textos, productos, categorías,
+proceso, colección, testimonios y SEO.
+
+Para agregar un producto, duplica un objeto dentro de "products" y modifica:
+- name: nombre visible
+- category: Agendas, Termos, Tazas, Playeras o Kits / Regalos
+- price: precio o texto de cotización
+- image: ruta de la imagen
+- alt: descripción accesible de la imagen
+
+Coloca las imágenes nuevas en assets/uploads/.
+
+2. PROBAR EN LA COMPUTADORA
+
+No abras index.html con doble clic. Desde esta carpeta ejecuta:
+
+python -m http.server 8000
+
+Después visita:
+http://localhost:8000/
+
+3. PUBLICAR EN NETLIFY
+
+- Sube esta carpeta a un repositorio de GitHub con rama main.
+- En Netlify, crea un proyecto importando ese repositorio.
+- La configuración de publicación ya está incluida en netlify.toml.
+- Activa HTTPS antes de configurar el acceso administrativo.
+
+4. PANEL ADMINISTRATIVO
+
+Ruta:
+/panel-impresamente-2026/
+
+El panel está configurado para iniciar sesión directamente con GitHub y
+guardar en:
+
+octaviogodinezaguilar-ux/impresamente-web
+
+Cada administrador debe tener acceso de escritura a ese repositorio.
+En Netlify configura GitHub como proveedor OAuth en:
+
+Project configuration > Access & security > OAuth
+
+La URL de retorno de la aplicación OAuth de GitHub debe ser:
+
+https://api.netlify.com/auth/done
+
+5. FORMULARIO DE SUSCRIPCIÓN
+
+El formulario está preparado para Netlify Forms. Después del primer deploy:
+- Entra a Forms en el panel de Netlify.
+- Verifica que aparezca el formulario "suscripcion".
+- Configura notificaciones por correo si las necesitas.
+
+6. SEGURIDAD
+
+La ruta oculta y noindex no sustituyen una contraseña.
+No habilites registro público en Identity.
+No compartas acceso al repositorio con personas que no deban editar el sitio.
