@@ -255,6 +255,14 @@
     });
   }
 
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href*="wa.me"]');
+    if (!link || typeof window.fbq !== 'function') return;
+    window.fbq('track', 'Contact', {
+      content_name: link.getAttribute('aria-label') || link.textContent.trim() || 'WhatsApp'
+    });
+  });
+
   fetch('data/site.json', { cache: 'no-store' })
     .then((response) => {
       if (!response.ok) throw new Error(`No se pudo cargar el contenido (${response.status})`);
